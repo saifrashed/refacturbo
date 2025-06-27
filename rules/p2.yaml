@@ -1,0 +1,34 @@
+rules:
+  - id: p2
+    message: Avoid string concatenation in loop
+    languages: [ java ]
+    severity: WARNING
+    patterns:
+      - pattern-either:
+        - pattern: |
+            $F(...) {
+                ...
+                $STR = ...;  
+                ...
+                for (...) {  
+                    ...
+                    $STR += ...;  
+                    ...
+                }
+                ...
+            }
+        - pattern: |
+            $F(...) {
+                ...
+                $STR = ...; 
+                ...
+                for (...) {  
+                    ...
+                    $STR = $STR + ...; 
+                    ...
+                }
+                ...
+            }
+    metadata:
+      prompt: |
+        prompt

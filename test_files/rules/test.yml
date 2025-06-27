@@ -1,0 +1,10 @@
+rules:
+  - id: detect-system-out-print
+    message: "Detect System.out.println"
+    languages: [java]
+    severity: WARNING
+    patterns:
+      - pattern: |
+          System.out.println(...)
+    metadata:
+      prompt: "Change system out print to 'Refactored'"

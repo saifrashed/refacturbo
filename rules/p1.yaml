@@ -1,0 +1,23 @@
+rules:
+  - id: p1
+    message: Avoid the use of a long if-else chain
+    languages: [java]
+    severity: WARNING
+    patterns:
+      - pattern: |
+          if ($COND1) $STMT1;
+          else if ($COND2) $STMT2;
+          else if ($COND3) $STMT3;
+          else if ($COND4) $STMT4;
+          else if ($COND5) $STMT5;
+          ...
+      - pattern-not-inside: |
+          if ($COND0) $STMT0;
+          else if ($COND1) $STMT1;
+          else if ($COND2) $STMT2;
+          else if ($COND3) $STMT3;
+          else if ($COND4) $STMT4;
+          ...
+    metadata:
+      prompt: |
+        prompt

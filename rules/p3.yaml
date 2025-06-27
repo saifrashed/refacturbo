@@ -1,0 +1,15 @@
+rules:
+  - id: p3
+    message: Unnecessary boxing detected. Consider using primitive `int` instead of `Integer` to avoid boxing/unboxing overhead.
+    languages: [java]
+    severity: WARNING
+    patterns:
+         - pattern: |
+            public $RET $METHOD(...){
+              ... 
+              Integer.valueOf(Integer.parseInt(...));
+              ...
+            }
+    metadata:
+      prompt: |
+        prompt
