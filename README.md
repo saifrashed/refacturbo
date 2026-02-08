@@ -1,5 +1,5 @@
 <figure style="margin: 2rem 0; text-align: center;">
-  <img src="[/assets/refacturbo/cover.jpg](http://localhost:4321/assets/refacturbo/cover.jpg)" alt="Refacturbo banner" style="max-width: 100%; height: auto; border-radius: 8px;" />
+  <img src="https://www.saifrashed.com/assets/refacturbo/cover.jpg" alt="Refacturbo banner" style="max-width: 100%; height: auto; border-radius: 8px;" />
 </figure>
 
 
