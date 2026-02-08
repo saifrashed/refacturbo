@@ -1,8 +1,6 @@
-```   ___      ___         __           __      
-  / _ \___ / _/__ _____/ /___ ______/ /  ___ 
- / , _/ -_) _/ _ `/ __/ __/ // / __/ _ \/ _ \
-/_/|_|\__/_/ \_,_/\__/\__/\_,_/_/ /_.__/\___/
-```    
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="[/assets/refacturbo/cover.jpg](http://localhost:4321/assets/refacturbo/cover.jpg)" alt="Refacturbo banner" style="max-width: 100%; height: auto; border-radius: 8px;" />
+</figure>
 
 
 # Installation steps
